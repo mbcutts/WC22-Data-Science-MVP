@@ -24,7 +24,7 @@ st.title('Data Science Jobs EDA')
 st.write('Data science is the domain of study that deals with vast volumes of data using modern tools and techniques to find unseen patterns, derive meaningful information, and make business decisions. Data science uses complex machine learning algorithms to build predictive models.The data used for analysis can come from many different sources and presented in various formats. Data science is an essential part of many industries today, given the massive amounts of data that are produced, and is one of the most debated topics in IT circles. Its popularity has grown over the years, and companies have started implementing data science techniques to grow their business and increase customer satisfaction.')
 
 #paiwise correlation of columns
-fig=px.imshow(ds_jobs.corr(),text_auto=True,height=600,width=600,template='ggplot2',aspect='auto',title='<b>Paiwise Correlation of Columns</b>')
+fig=px.imshow(ds_jobs.corr(),text_auto=True,height=600,width=600,template='ggplot2',aspect='auto',title='<b>Pairwise Correlation of Columns</b>')
 fig.update_layout(title_x=0.5)
 st.plotly_chart(fig, use_container_width = True)
 
